@@ -1,6 +1,6 @@
 # sorrygle-rs
 
-This is a [Sorrygle] (https://github.com/JJoriping/Sorrygle.git) compiler written in Rust
+This is a [Sorrygle](https://github.com/JJoriping/Sorrygle.git) compiler written in Rust
 
 ## How to use (Not yet implemented)
 
@@ -29,4 +29,4 @@ sorrygle-rs -c script.srg output.mid -c
 
 ## Todo
 
-See this todo page
+See this [todo](docs/todo.md) page
