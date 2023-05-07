@@ -23,7 +23,7 @@ sorrygle-rs -c script.srg output.mid --strict
 
 When you use extended commands, you must to insert `-e` (or `--extend`)
 ```sh
-sorrygle-rs -c script.srg output.mid -c
+sorrygle-rs -c script.srg output.mid -e
 ```
 
 

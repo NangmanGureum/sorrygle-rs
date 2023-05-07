@@ -1,7 +1,12 @@
 1. Make Parser
    1. How parser works
-      1. Simple parser
+      1. Simple checker
          1. Simple Check (Abstraction from lines needed for inspection)
+            1. Checking points
+               1. Check channel definition
+                  If the command has `--strict` option but no channel definition, It may result in an error.
+               2. Check the vaildity
+                  If the command doesn't have `-e`(`--extend`) option but the script has like `#B2`, It may result in an error.
       2. Main parser
         1. Clean-up
          2. Remove comments
@@ -12,9 +17,9 @@
    2. Format Structure
       1. Comment (`/= ... =/`)
       2. Master command (`((ⓚ=ⓥ))`)
-      3. Channel indicator (`#ⓘ` or `#{ALPHABET}ⓘ`)
+      3. Channel definition (`#ⓘ` or `#{ALPHABET}ⓘ`)
          Note: This is not necessary part but if the command has `--strict` option, it may need this part.
-         1. Channel Command (`(ⓚ=ⓥ)`)
+         1. Channel command (`(ⓚ=ⓥ)`)
          2. Repeat (`|: {notes} :|ⓘ`)
          3. Note(s) (`cdefgab`)
             1. Rest note (`_`)
