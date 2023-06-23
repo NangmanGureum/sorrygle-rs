@@ -11,9 +11,9 @@ sorrygle-rs -p "(q=8)cdefgfedc~~~"
 
 ### Options (Not yet implemented)
 
-When you play a simple Sorrygle script, just put `-p` (or `--play`) option
+When you play a Sorrygle script file, just put `-p` (or `--play`) option
 ```sh
-sorrygle-rs -p "(q=8)edcdeee~~"
+sorrygle-rs -p script.srg
 ```
 
 If you want to convert script to midi, you must put the `-c`(or `--convert`) option.

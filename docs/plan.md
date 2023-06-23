@@ -1,8 +1,8 @@
 1. Make Parser
    1. How parser works
       1. Simple checker
-         1. Simple Check (Abstraction from lines needed for inspection)
-            1. Checking points
+         - Simple Check (Abstraction from lines needed for inspection)
+            - Checking points
                1. Check channel definition
                   If the command has `--strict` option but no channel definition, It may result in an error.
                2. Check the vaildity
@@ -17,7 +17,7 @@
    2. Format Structure
       1. Comment (`/= ... =/`)
       2. Master command (`((ⓚ=ⓥ))`)
-      3. Channel definition (`#ⓘ` or `#{ALPHABET}ⓘ`)
+      3. Channel definition (`#ⓘ`, or `#{ALPHABET}ⓘ` in extended mode)
          Note: This is not necessary part but if the command has `--strict` option, it may need this part.
          1. Channel command (`(ⓚ=ⓥ)`)
          2. Repeat (`|: {notes} :|ⓘ`)
@@ -42,9 +42,9 @@
         Parameter number is ⓝ and the value on the CC is ⓥ
    3. MIDI format reset
        `((reset={format name}))`
-       (E. g. `(reset=gm)`, `(reset=gs)`, `(reset=xg)`)
+       (E. g. `((reset=gm))`, `((reset=gs)`, `(reset=xg)`)
    4. Multiple ports
-      `#{alphabet}ⓘ`
+      `#{UPPER CASE ALPHABET}ⓘ`
       (E. g.`#A1`, `#E4`)
    5. Master volume
       `((mstv=ⓥ))`
